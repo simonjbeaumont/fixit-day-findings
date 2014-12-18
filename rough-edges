@@ -2,3 +2,4 @@ File any usuability issues here (not substantial/political enough to file as a b
 
 - rrdd plugin failures spam the logs
 - rrdd plugin failures don't log why the plugin couldn't be processed
+- control domain is not renamed following host name change (I still have 'Control domain on host: localhost.localdomain') which is rather useless
