@@ -1,1 +1,4 @@
 File any usuability issues here (not substantial/political enough to file as a bug)
+
+- rrdd plugin failures spam the logs
+- rrdd plugin failures don't log why the plugin couldn't be processed
