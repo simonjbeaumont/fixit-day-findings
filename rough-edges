@@ -3,3 +3,27 @@ File any usuability issues here (not substantial/political enough to file as a b
 - rrdd plugin failures spam the logs
 - rrdd plugin failures don't log why the plugin couldn't be processed
 - control domain is not renamed following host name change (I still have 'Control domain on host: localhost.localdomain') which is rather useless
+
+
+
+
+
+
+
+
+
+
+
+
+Bangalore Observations
+Probable Bugs:
+1) Create a disk snapshot of VM -> Revert VM to snapshot -> Perform VM migration -> Throws error "VDI was not mapped to destination SR"
+2) Create a checkpoint for Windows VM -> Create a New VM from checkpoint -> Throws error "VDI is in use by some other operation"
+
+
+1. RPU precheck improvementf a VM on slave has 2 or more snapshots or 1 checkpoint, then it would not be able to migrate during RPU.IX: Check that condition in RPU precheck and give warnings accordingly.
+2. Cannot see the dom0 console of trunk
+3. No Disk mentioned in Performance tab of the VM in Disk section
+4. Disk Perfomrance and Network performance of the VM not relaible
+5. Socket leak on trunk after I tried to do 2 Live migrations and 1 SXM along with a snapshot of another VM. Si helping with this.
+6. Creedence to Trunk RPU failed due to windows VM on slave not migrating during host evacuate. I am investigating it.
