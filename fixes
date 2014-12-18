@@ -1,0 +1,1 @@
+CA-141580: Dom0 console doesn't work... Fixed by https://github.com/xapi-project/xen-api/pull/2066
